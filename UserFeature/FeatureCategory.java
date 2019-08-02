@@ -2,7 +2,7 @@ import java.util.HashMap;
 
 public class FeatureCategory {
     public static final String[] CATEGORY = {"sport", "home", "cosmetics", "dress", "foodie", "coffee", "computer"};
-    private static final double featureWeight = 0.7;
+
 
     public static HashMap<String, Double> featureMap() {
         HashMap<String, Double> result = new HashMap<>();
@@ -13,9 +13,7 @@ public class FeatureCategory {
     }
 
     public static double matchScore(User user, Ad ad) {
-        double featureScore = matchFeatures(user.getFeatureMap(), ad.getFeatureMap());
-        double score = featureScore * featureWeight;
-        return score;
+        return matchFeatures(user.getFeatureMap(), ad.getFeatureMap());
     }
 
     private static double matchFeatures(HashMap<String, Double> map1, HashMap<String, Double> map2) {
