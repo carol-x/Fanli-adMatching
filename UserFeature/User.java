@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class User implements Entity{
+public class User extends Entity{
     // properties for the user
     // features and bestowed values
     private int id;
@@ -11,7 +11,7 @@ public class User implements Entity{
     private Behavior[] behaviors;
 
     public User(int id) {
-        this.id = id;
+        super(id);
     }
 
     public void basicInfo(int gender, int age, int priceRange) {
@@ -19,5 +19,4 @@ public class User implements Entity{
         this.age = age;
         this.priceRange = priceRange;
     }
-
 }

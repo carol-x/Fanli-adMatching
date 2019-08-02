@@ -1,18 +1,21 @@
 import java.util.HashMap;
 
-public interface Entity {
+public class Entity {
     HashMap<String, Double> featureMap = FeatureCategory.featureMap(); //contains value between 0 and 1
-    int id = 0;
+    private int id;
 
-    default void updateFeature(String feature, double score) {
+    public Entity(int id) {
+        this.id = id;
+    }
+
+    public void updateFeature(String feature, double score) {
         featureMap.put(feature, score);
     }
 
-    default HashMap<String, Double> getFeatureMap() {
+    public HashMap<String, Double> getFeatureMap() {
         return featureMap;
     }
-
-    default  int getId() {
+    public int getId() {
         return id;
     }
 }

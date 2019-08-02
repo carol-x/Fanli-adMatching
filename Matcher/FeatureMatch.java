@@ -2,7 +2,6 @@ public class FeatureMatch {
     // pick the best ad from an array to match a user
     // computed within the constructor
     private int bestAd;
-    private static final double featureWeight = 0.7;
 
     public FeatureMatch(User user, Ad[] adList) {
         double highestScore = 0;
