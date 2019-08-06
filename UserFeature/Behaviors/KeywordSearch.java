@@ -3,4 +3,9 @@ public class KeywordSearch implements Behavior {
     private String keyword;
     private double timeStamp;
     private double timeSpent;
+
+    @Override
+    public double relevance(FeatureCategory feature) {
+        return 0;
+    }
 }
