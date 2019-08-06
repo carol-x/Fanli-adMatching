@@ -12,7 +12,7 @@ public class FeatureMatch {
                     + user.getBasicInfo().matches(ad.getBasicInfo()) * (1 - featureWeight);
 
             // testing
-            System.out.println("total score is " + score);
+            System.out.println("ID " + ad.getId() + " has total score of " + score);
             System.out.println("feature score is " + FeatureCategory.matchScore(user, ad) * featureWeight +
                     ", basic score is " + user.getBasicInfo().matches(ad.getBasicInfo()) * (1 - featureWeight));
             System.out.println();

@@ -1,5 +1,5 @@
 public interface Behavior {
-    double relevance(Feature feature);
+    double relevance(FeatureCategory feature);
     double relevance(Behavior expectedBehavior);
 
 }

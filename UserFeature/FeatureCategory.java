@@ -3,7 +3,8 @@ import java.util.HashMap;
 public class FeatureCategory {
     public static final String[] CATEGORY = {"sport", "home", "cosmetics", "dress", "foodie", "coffee", "computer"};
     public static final String[] FEATURES = {"location", "device", "social media", "favorite web", "time spent"};
-    public static final String[] TechnicalIndex = {"web browser", "dimension", "device", "internet"};
+    public static final String[] technicalIndex = {"web browser", "dimension", "device", "internet"};
+    public static final String[] BEHAVIORS = {"browsing category", "9k9", "searching", "keywords"};
 
 
     public static HashMap<String, Double> featureMap() {
